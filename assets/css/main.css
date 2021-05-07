@@ -40,6 +40,19 @@ h1 {
     padding-bottom: .5rem;
 }
 
+.title {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
 h3 {
     color: rgba(255, 255, 255, 0.925);
     font-family: Helvetica, sans-serif;
@@ -72,7 +85,7 @@ h3 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.925);
 }
 
-input[type=text], select, textarea {
+#input[type=text], select, textarea {
     font-family: Helvetica, sans-serif;
     font-weight: 200;
     color: rgba(255, 255, 255, 0.959);
