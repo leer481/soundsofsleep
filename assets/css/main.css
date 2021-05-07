@@ -1,11 +1,10 @@
 * {
     padding: 0px;
     margin: 0px;
+    cursor: url(../media/cursor.png), auto;
 }
 
 body {
-    cursor: url(../media/cursor.png), auto;
-
     background: linear-gradient(-45deg, black, #35498a, #383779, #35558a, black);
 	background-size: 400% 400%;
 	animation: gradient 25s ease infinite;
