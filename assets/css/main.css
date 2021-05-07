@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    cursor: url(../media/cursor.png), auto;
+
+    background: linear-gradient(-45deg, black, #35498a, #383779, #35558a, black);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@font-face {
+	font-family: MillionDreams;
+	src: url(MillionDreams.otf);
+}
+
+h1 {
+    color: white;
+    font-family: MillionDreams;
+    font-weight: 200;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40vh;
+    padding-bottom: .5rem;
+}
+
+h3 {
+    color: rgba(255, 255, 255, 0.925);
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding: 2rem;
+}
+
+#type {
+    font-family: Arial;
+    font-weight: 200;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input {
+    background-color: transparent;
+    width: 15vw;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+    cursor: text;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.925);
+}
+
+input[type=text], select, textarea {
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.959);
+}
+
+::placeholder {
+    color:rgba(255, 255, 255, 0.836);
+  }
+
+#result {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+
+    padding: 3rem;
+}
+
+/* media queries */
+
+/* mobile */
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+    #input {
+        width: 35vw;
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #result {
+        font-size: 1.4rem;
+    }
+
+}
